@@ -12,10 +12,6 @@ public class Compte {
         return nom;
     }
 
-    public void setNom(String nom) {
-        this.nom = nom;
-    }
-
     public Compte(String nom, double solde){
         this.solde = solde;
         this.nom = nom;
