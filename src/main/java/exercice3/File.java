@@ -2,7 +2,7 @@ package exercice3;
 import java.util.LinkedList;
 
 public class File {
-    LinkedList<Integer> buffer;
+    LinkedList<Integer> buffer = new LinkedList<>();
     int capacite = 7;
 
     public File(int capacite) {
