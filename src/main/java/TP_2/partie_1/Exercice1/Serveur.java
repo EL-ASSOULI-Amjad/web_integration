@@ -1,4 +1,4 @@
-package TP_2.partie_2.partie_11.Exercice1;
+package TP_2.partie_1.Exercice1;
 
 import java.io.*;
 import java.net.*;

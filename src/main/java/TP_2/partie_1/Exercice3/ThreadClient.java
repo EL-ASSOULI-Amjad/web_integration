@@ -1,4 +1,4 @@
-package TP_2.partie_2.partie_11.Exercice3;
+package TP_2.partie_1.Exercice3;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
