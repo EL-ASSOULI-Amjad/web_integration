@@ -1,4 +1,4 @@
-package exercice4;
+package TP_1.exercice4;
 
 import java.util.*;
 import java.util.concurrent.*;

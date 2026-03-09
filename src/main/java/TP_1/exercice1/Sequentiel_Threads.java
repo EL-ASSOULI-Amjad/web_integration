@@ -1,4 +1,4 @@
-package exercice1;
+package TP_1.exercice1;
 
 public class Sequentiel_Threads {
     public void sequentiel() {

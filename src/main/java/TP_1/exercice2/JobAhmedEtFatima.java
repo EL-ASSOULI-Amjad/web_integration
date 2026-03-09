@@ -1,4 +1,4 @@
-package exercice2;
+package TP_1.exercice2;
 
 public class JobAhmedEtFatima implements Runnable {
     private final Compte compte;

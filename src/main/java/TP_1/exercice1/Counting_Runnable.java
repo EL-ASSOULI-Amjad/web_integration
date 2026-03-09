@@ -1,4 +1,4 @@
-package exercice1;
+package TP_1.exercice1;
 
 public class Counting_Runnable implements Runnable {
     @Override

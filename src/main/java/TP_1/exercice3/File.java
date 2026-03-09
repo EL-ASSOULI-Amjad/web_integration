@@ -1,4 +1,4 @@
-package exercice3;
+package TP_1.exercice3;
 import java.util.LinkedList;
 
 public class File {

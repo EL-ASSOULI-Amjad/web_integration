@@ -1,4 +1,4 @@
-package exercice1;
+package TP_1.exercice1;
 
 public class Concurrent_Threads {
     public void concurrent() {

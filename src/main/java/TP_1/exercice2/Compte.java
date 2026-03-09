@@ -1,4 +1,4 @@
-package exercice2;
+package TP_1.exercice2;
 
 public class Compte {
     private double solde;
