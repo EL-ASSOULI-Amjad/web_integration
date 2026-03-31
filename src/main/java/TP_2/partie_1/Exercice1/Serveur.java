@@ -2,34 +2,23 @@ package TP_2.partie_1.Exercice1;
 
 import java.io.*;
 import java.net.*;
-import java.util.*;
+import javax.net.ssl.*;
 
 public class Serveur {
-
-    static String[] proverbes = {
-            "Patience is a virtue.",
-            "Better late than never.",
-            "Actions speak louder than words.",
-            "Where there is a will, there is a way."
-    };
-
     public static void main(String[] args) throws Exception {
+        System.setProperty("javax.net.ssl.keyStore", "src/main/java/TP_2/partie_1/Exercice1/serverkey.jks");
+        System.setProperty("javax.net.ssl.keyStorePassword", "stpass123");
 
-        ServerSocket server = new ServerSocket(5000);
-        System.out.println("Server started...");
+        SSLServerSocketFactory ssf = (SSLServerSocketFactory) SSLServerSocketFactory.getDefault();
+        SSLServerSocket server = (SSLServerSocket) ssf.createServerSocket(5000);
 
-        Random rand = new Random();
+        System.out.println("Server started (SSL)...");
 
         while(true) {
-            Socket client = server.accept();
+            SSLSocket client = (SSLSocket) server.accept();
             System.out.println("Client connected");
-
             PrintWriter out = new PrintWriter(client.getOutputStream(), true);
-
-            String proverbe = proverbes[rand.nextInt(proverbes.length)];
-
-            out.println(proverbe);
-
+            out.println("Hello world");
             client.close();
         }
     }
